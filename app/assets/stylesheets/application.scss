@@ -1,0 +1,161 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+	font-family: monospace;
+	background: -webkit-linear-gradient(left, #AB8888, #000000 90%);
+	color: white;
+	padding-bottom: 100px;
+	padding-top: 60px;
+}
+.navbar-inverse {
+	box-shadow: 2px 2px 7px white
+}
+.navbar-brand{
+	font-size: 25px;
+}
+.navbar-inverse .navbar-brand {
+    color: #2ED22E;
+    text-shadow: 2px 2px 1px #65898E;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #2ED22E;
+}
+
+#style-margin{
+	margin-top: 5% 
+}
+
+hr{
+	margin-bottom:60px;
+}
+
+input{
+	margin: 2% 0;
+}
+
+label{
+    color: #2ED22E;
+}
+
+h1{
+	color: #2ED22E;
+}
+
+.container1{
+	background-color:rgba(255, 255, 255, 0.07);
+	padding-bottom: 200px;
+}
+
+a{
+	margin-left: 5px;
+	text-decoration: none;
+	color: #2ED22E;
+	font-size: 20px;
+}
+
+thead{
+	background-color: white;
+}
+
+th{
+	color: #2ED22E;
+	padding: 20px -1px;
+}
+
+a:hover{
+	color : white;
+}
+
+.table > tbody > tr > th, .table > tbody > tr > td,  .table > tfoot > tr > th, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 0px solid #ddd;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.table > tbody > tr > td {	
+	color: #2ED22E;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #2ED22E;
+    border-color: #4cae4c;
+    margin-right: 3px;
+}
+
+th, td{
+	text-align : center;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.title{
+	margin-top: 20px;
+	font-size :20px;
+}
+
+.sno{
+	width:20px; 
+}
+
+.category{
+	width:50px;
+}
+
+.available_books{
+	width:50px;
+}
+
+.description{
+	margin-left : 30px;
+}
+
+.alert, .notice{
+	font-size: 20px;
+}
+
+p{
+	color:#B7F7B7;
+}
+
+.current-user{
+	margin:20px;
+}
+.status{
+	color:white;
+}
+.pagination{
+	margin-top: 30px;
+}
+.show-paginator{
+	margin-top: 30px;	
+}
+.errors{
+	color: rgb(226, 101, 101);
+}
+#error_explanation{
+	color: rgb(226, 101, 101);
+}
+

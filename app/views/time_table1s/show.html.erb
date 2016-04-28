@@ -1,0 +1,63 @@
+<h1 class="text-center">Create TimeTable</h1><hr/>
+
+<div class="container">
+	
+	<table class="table table-bordered">
+		<thead>
+			<tr>		
+				<th></th>
+				<th> 9-10 <br/> Subject Staff </th>
+				<th> 10-11 <br/> Subject Staff  </th>
+				<th> 11-12 <br/> Subject Staff  </th>
+				<th> 1-2 <br/> Subject Staff  </th>
+				<th> 2-3 <br/> Subject Staff  </th>
+			</tr>	
+		</thead>
+		<tbody>
+				<tr>
+					<td>Mon</td>
+					<td><%= Subject.find(@time_table.mon_1).name %> |  <%= Staff.find(@time_table.mon_staff1).first_name%></td>
+					<td><%= Subject.find(@time_table.mon_2).name %> |  <%=Staff.find(@time_table.mon_staff2).first_name %></td>
+					<td><%= Subject.find(@time_table.mon_3).name %> | <%=Staff.find(@time_table.mon_staff3).first_name %></td>
+					<td><%=Subject.find(@time_table.mon_4).name %> | <%=Staff.find(@time_table.mon_staff4).first_name%></td>
+					<td><%= Subject.find(@time_table.mon_5).name %> | <%=Staff.find(@time_table.mon_staff5).first_name %></td>
+				</tr>
+				<tr>
+					<td>Tus</td>
+					<td><%=Subject.find(@time_table.tue_1).name %> | <%= Staff.find( @time_table.tue_staff1).first_name %></td>
+					<td><%=Subject.find(@time_table.tue_2).name %> | <%=Staff.find(  @time_table.tue_staff2).first_name %></td>
+					<td><%=Subject.find(@time_table.tue_3).name %> |  <%= Staff.find( @time_table.tue_staff3).first_name %></td>
+					<td><%=Subject.find(@time_table.tue_4).name %> | <%=Staff.find(  @time_table.tue_staff4).first_name %></td>
+					<td><%=Subject.find(@time_table.tue_5).name %> | <%= Staff.find( @time_table.tue_staff5 ).first_name%></td>
+				</tr>
+				<tr>
+					<td>Wed</td>
+					<td><%=Subject.find(@time_table.wed_1).name %> | <%=Staff.find(  @time_table.wed_staff1).first_name %></td>
+					<td><%=Subject.find(@time_table.wed_2).name %> | <%=Staff.find(  @time_table.wed_staff2).first_name %></td>
+					<td><%=Subject.find(@time_table.wed_3).name %> | <%= Staff.find( @time_table.wed_staff3).first_name %></td>
+					<td><%=Subject.find(@time_table.wed_4).name %> | <%= Staff.find( @time_table.wed_staff4).first_name %></td>
+					<td><%=Subject.find(@time_table.wed_5).name %> | <%= Staff.find( @time_table.wed_staff5).first_name %></td>
+
+				</tr>
+				<tr>
+					<td>Thus</td>
+					<td><%=Subject.find(@time_table.thus_1).name %> |  <%= Staff.find( @time_table.thus_staff1).first_name %></td>
+					<td><%=Subject.find(@time_table.thus_2).name %> | <%= Staff.find( @time_table.thus_staff2).first_name %></td>
+					<td><%=Subject.find(@time_table.thus_3).name %> | <%= Staff.find( @time_table.thus_staff3).first_name %></td>
+					<td><%=Subject.find(@time_table.thus_4).name %> | <%=Staff.find(  @time_table.thus_staff4).first_name %></td>
+					<td><%=Subject.find(@time_table.thus_5).name %> | <%=Staff.find(  @time_table.thus_staff5).first_name %></td>
+				</tr>
+				<tr>
+					<td>Fri</td>
+					<td><%=Subject.find(@time_table.fri_1).name %> | <%=Staff.find(  @time_table.fri_staff1).first_name %></td>
+					<td><%=Subject.find(@time_table.fri_2).name %> | <%= Staff.find( @time_table.fri_staff2).first_name %></td>
+					<td><%=Subject.find(@time_table.fri_3).name %> | <%= Staff.find( @time_table.fri_staff3).first_name %></td>
+					<td><%=Subject.find(@time_table.fri_4).name %> | <%= Staff.find( @time_table.fri_staff4).first_name %></td>
+					<td><%=Subject.find(@time_table.fri_5).name %> | <%=Staff.find(  @time_table.fri_staff5 ).first_name%></td>
+				</tr>
+
+		</tbody>
+	</table>	
+				
+
+</div>

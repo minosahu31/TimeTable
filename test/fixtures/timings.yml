@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  week_day_id: 1
+  subject_id: 
+  slot_time_id: 
+  staff_id: 
+  batch_id: 1
+
+two:
+  week_day_id: 1
+  subject_id: 
+  slot_time_id: 
+  staff_id: 
+  batch_id: 1

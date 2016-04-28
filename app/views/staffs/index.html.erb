@@ -1,0 +1,20 @@
+<div id="style-margin">
+	<!-- Starting main container -->
+	<div class="container">
+		<h1>Available Staffs <%= link_to "Add Staff", new_staff_path, class: "btn btn-success pull-right" %><%= link_to "Batches", batches_path, class: "btn btn-success pull-right" %><%= link_to "Students", students_path, class: "btn btn-success pull-right" %></h1><hr/>
+		<div class="col-md-8 col-md-offset-2 table-responsive">
+			<table class="table">	
+				<tr>
+					<th>S.No</th>
+					<th>Staff ID</th>
+				</tr>	
+				<% @staffs.each_with_index do |staff,i| %>
+					<tr>
+						<td><%= i+1 %></td>
+						<td><%= link_to staff.first_name, staff_path(staff) %></td>
+					</tr>	
+				<% end %>
+			</table>	
+		</div>
+	</div>	
+</div>	

@@ -1,0 +1,59 @@
+<div id="style-margin">
+	<!-- Starting main container -->
+	<div class="container">
+		<h1>Batch <%= link_to "Back", batches_path, class: "btn btn-success pull-right" %><%= link_to "Edit", edit_batch_path(@batch), class: "btn btn-success pull-right" %><%= link_to "Add Time Table", new_time_table1_path(@batch), class: "btn btn-success pull-right" %><%= link_to "Delete", batch_path(@batch), method: 'delete', data: { confirm: "Are you sure want to delete?" } , class: "btn btn-success pull-right" %></h1><hr/>
+		<div class="col-md-10 col-md-offset-1 table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th> Batch ID </th>
+						<th> Year </th>
+						<th> Room Number </th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr>
+							<td><%= @batch.batch_id %></td>
+							<td><%= @batch.year %></td>
+							<td><%= @batch.room_no %></td>
+						</tr>	
+				</tbody>	
+			</table>
+
+		</div>
+
+		<h1> Students </h1><hr/>
+			<div class="col-md-10 col-md-offset-1">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th> Register Number </th>
+						<th> First Name </th>
+						<th> Last Name </th>
+						<th> Email </th>
+						<th> DOB </th>
+					</tr>
+				</thead>
+				<tbody>
+					<% @students.each do |student| %>
+						<tr>
+							<td><%= student.register_number %></td>
+							<td><%= student.first_name %></td>
+							<td><%= student.last_name %></td>
+							<td><%= student.email %></td>
+							<td><%= student.dob %></td>
+						</tr>	
+					<% end %>	
+				</tbody>	
+			</table>
+
+		</div>
+
+	</div>	
+	<!-- end of main container -->
+	<div class="container">
+		<h1>Time Table</h1><hr/>
+		<%#= render "time_table1s/show"  %>
+	</div>	
+
+</div>	

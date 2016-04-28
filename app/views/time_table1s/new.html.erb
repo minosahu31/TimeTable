@@ -1,0 +1,67 @@
+<h1 class="text-center">Create TimeTable</h1><hr/>
+
+<div class="container">
+	<%= form_for @time_table do |f| %>
+	<p><b>Batch:</b></p>
+	<%= f.text_field :batch_id,:value => @batch.id , class: "form-control" %>
+	<table class="table table-bordered">
+		<thead>
+			<tr>		
+				<th></th>
+				<th> 9-10 </th>
+				<th> 10-11 </th>
+				<th> 11-12 </th>
+				<th> 1-2 </th>
+				<th> 2-3 </th>
+			</tr>	
+		</thead>
+		<tbody>
+				<tr>
+					<td>Mon</td>
+					<td><%= f.select(:mon_1, options_for_select(@subjects), {}) %><%= f.select(:mon_staff1, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:mon_2, options_for_select(@subjects), {}) %><%= f.select(:mon_staff2, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:mon_3, options_for_select(@subjects), {}) %><%= f.select(:mon_staff3, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:mon_4, options_for_select(@subjects), {}) %><%= f.select(:mon_staff4, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:mon_5, options_for_select(@subjects), {}) %><%= f.select(:mon_staff5, options_for_select(@staffs), {}) %></td>
+				</tr>
+				<tr>
+					<td>Tus</td>
+					<td><%= f.select(:tue_1, options_for_select(@subjects), {}) %><%= f.select(:tue_staff1, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:tue_2, options_for_select(@subjects), {}) %><%= f.select(:tue_staff2, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:tue_3, options_for_select(@subjects), {}) %><%= f.select(:tue_staff3, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:tue_4, options_for_select(@subjects), {}) %><%= f.select(:tue_staff4, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:tue_5, options_for_select(@subjects), {}) %><%= f.select(:tue_staff5, options_for_select(@staffs), {}) %></td>
+				</tr>
+				<tr>
+					<td>Wed</td>
+					<td><%= f.select(:wed_1, options_for_select(@subjects), {}) %><%= f.select(:wed_staff1, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:wed_2, options_for_select(@subjects), {}) %><%= f.select(:wed_staff2, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:wed_3, options_for_select(@subjects), {}) %><%= f.select(:wed_staff3, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:wed_4, options_for_select(@subjects), {}) %><%= f.select(:wed_staff4, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:wed_5, options_for_select(@subjects), {}) %><%= f.select(:wed_staff5, options_for_select(@staffs), {}) %></td>
+				</tr>
+				<tr>
+					<td>Thus</td>
+					<td><%= f.select(:thus_1, options_for_select(@subjects), {}) %><%= f.select(:thus_staff1, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:thus_2, options_for_select(@subjects), {}) %><%= f.select(:thus_staff2, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:thus_3, options_for_select(@subjects), {}) %><%= f.select(:thus_staff3, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:thus_4, options_for_select(@subjects), {}) %><%= f.select(:thus_staff4, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:thus_5, options_for_select(@subjects), {}) %><%= f.select(:thus_staff5, options_for_select(@staffs), {}) %></td>
+				</tr>
+				<tr>
+					<td>Fri</td>
+					<td><%= f.select(:fri_1, options_for_select(@subjects), {}) %><%= f.select(:fri_staff1, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:fri_2, options_for_select(@subjects), {}) %><%= f.select(:fri_staff2, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:fri_3, options_for_select(@subjects), {}) %><%= f.select(:fri_staff3, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:fri_4, options_for_select(@subjects), {}) %><%= f.select(:fri_staff4, options_for_select(@staffs), {}) %></td>
+					<td><%= f.select(:fri_5, options_for_select(@subjects), {}) %><%= f.select(:fri_staff5, options_for_select(@staffs), {}) %></td>
+				</tr>
+
+		</tbody>
+	</table>	
+				<div class="form-group">
+					<%= f.submit :class => "btn btn-success" %>
+				</div>
+		<% end %>				
+
+</div>

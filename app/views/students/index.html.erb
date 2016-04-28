@@ -1,0 +1,21 @@
+<!-- studnets panel -->
+	<div id="style-margin">
+	<!-- Starting main container -->
+	<div class="container">
+		<h1>Available Students <%= link_to "Add Student", new_student_path, class: "btn btn-success pull-right" %><%= link_to "Batches", batches_path, class: "btn btn-success pull-right" %><%= link_to "Staffs", staffs_path, class: "btn btn-success pull-right" %></h1><hr/>
+		<div class="col-md-8 col-md-offset-2 table-responsive">
+			<table class="table">	
+				<tr>
+					<th>S.No</th>
+					<th>Register Number</th>
+				</tr>	
+				<% @students.each_with_index do |student,i| %>
+					<tr>
+						<td><%= i+1 %></td>
+						<td><%= link_to student.register_number, student_path(student) %></td>
+					</tr>	
+				<% end %>
+			</table>	
+		</div>
+	</div>	
+</div>	

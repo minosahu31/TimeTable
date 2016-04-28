@@ -1,0 +1,27 @@
+<div id="style-margin">
+	<!-- Starting main container -->
+	<div class="container">
+		<h1>Staff <%= link_to "Back", staffs_path, class: "btn btn-success pull-right" %><%= link_to "Edit", edit_staff_path(@staff), class: "btn btn-success pull-right" %><%= link_to "Delete", staff_path(@staff), method: 'delete', data: { confirm: "Are you sure want to delete?" } , class: "btn btn-success pull-right" %></h1><hr/>
+		<div class="col-md-10 col-md-offset-1 table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th> Staff ID </th>
+						<th> First Name </th>
+						<th> Last Name </th>
+						<th> Email </th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr>
+							<td><%= @staff.staff_id %></td>
+							<td><%= @staff.first_name %></td>
+							<td><%= @staff.last_name %></td>
+							<td><%= @staff.email %></td>
+						</tr>	
+				</tbody>	
+			</table>	
+		</div>	
+	</div>	
+	<!-- end of main container -->
+</div>	

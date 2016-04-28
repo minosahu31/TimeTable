@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mon_1: MyString
+  mon_2: MyString
+  mon_3: MyString
+  mon_4: MyString
+  mon_5: MyString
+  tue_1: MyString
+  tue_2: MyString
+  tue_3: MyString
+  tue_4: MyString
+  tue_5: MyString
+  wed_1: MyString
+  wed_2: MyString
+  wed_3: MyString
+  wed_4: MyString
+  wed_5: MyString
+  thus_1: MyString
+  thus_2: MyString
+  thus_3: MyString
+  thus_4: MyString
+  thus_5: MyString
+  fri_1: MyString
+  fri_2: MyString
+  fri_3: MyString
+  fri_4: MyString
+  fri_5: MyString
+
+two:
+  mon_1: MyString
+  mon_2: MyString
+  mon_3: MyString
+  mon_4: MyString
+  mon_5: MyString
+  tue_1: MyString
+  tue_2: MyString
+  tue_3: MyString
+  tue_4: MyString
+  tue_5: MyString
+  wed_1: MyString
+  wed_2: MyString
+  wed_3: MyString
+  wed_4: MyString
+  wed_5: MyString
+  thus_1: MyString
+  thus_2: MyString
+  thus_3: MyString
+  thus_4: MyString
+  thus_5: MyString
+  fri_1: MyString
+  fri_2: MyString
+  fri_3: MyString
+  fri_4: MyString
+  fri_5: MyString

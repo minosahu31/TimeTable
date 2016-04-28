@@ -1,0 +1,20 @@
+<div id="style-margin">
+	<!-- Starting main container -->
+	<div class="container">
+		<h1>Available Batches <%= link_to "Add Batch", new_batch_path, class: "btn btn-success pull-right" %><%= link_to "Students", students_path, class: "btn btn-success pull-right" %><%= link_to "Staffs", staffs_path, class: "btn btn-success pull-right" %></h1><hr/>
+		<div class="col-md-8 col-md-offset-2 table-responsive">
+			<table class="table">	
+				<tr>
+					<th>S.No</th>
+					<th>Batch ID</th>
+				</tr>	
+				<% @batches.each_with_index do |batch,i| %>
+					<tr>
+						<td><%= i+1 %></td>
+						<td><%= link_to batch.year, batch_path(batch) %></td>
+					</tr>	
+				<% end %>
+			</table>	
+		</div>
+	</div>	
+</div>	
